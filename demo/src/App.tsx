@@ -1,13 +1,10 @@
-interface Human {
-  name: string
-}
-
 function App() {
 
   const str: string = "WenJunjie"
 
   const lover: Array<string> = [
-    
+    "LiQingYang",
+    "XuYaPing",
   ]
 
   const talk = (somebody: Array<string>): string => {
@@ -16,8 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <picture></picture>
-      <button onClick={() => { alert(str + " " + talk(lover)); }}> love </button>
+      <button onClick={() => { alert(str + " " + talk(lover)); }}> say </button>
     </div>
   )
 }
